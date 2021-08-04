@@ -3,6 +3,6 @@
   "template": "PWA",
   "isConfigured": {
     "client": true,
-    "server": false
+    "server": true
   }
 }

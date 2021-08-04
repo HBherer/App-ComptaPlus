@@ -1,14 +1,31 @@
 // Importing required modules
 const cors = require('cors');
 const express = require('express');
+const mongoose = require("mongoose");
+const morgan = require("morgan");
+const bodyParser = require("body-parser");
+const app = express();
 
+//configure database and mongoose
+mongoose.connect(
+    "mongodb://localhost:27017/testdbapp", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}
+);
+const db = mongoose.connection;
+db.on("error", console.error.bind(console, "erreur de connection:"));
+//registering cors
+app.use(cors());
+//configure body parser
+app.use(morgan("dev"));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 // parse env variables
 require('dotenv').config();
 
 // Configuring port
 const port = process.env.PORT || 9000;
-
-const app = express();
 
 // Configure middlewares
 app.use(cors());
