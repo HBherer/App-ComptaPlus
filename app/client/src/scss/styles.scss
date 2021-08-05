@@ -1,0 +1,34 @@
+@import "_base";
+
+.w100 {
+    width: 100%;
+}
+
+input {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff15;
+    color: #FFFFFF;
+    border: solid transparent;
+
+    &:hover,
+    :focus {
+        background-color: #cfdfb523;
+        border: solid #FFFFFF;
+    }
+}
+
+button {
+    background-color: #B4E364;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+
+    &:hover {
+        background-color: #c1e287;
+        color: #FFFFFF;
+    }
+}
