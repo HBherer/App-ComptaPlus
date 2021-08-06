@@ -9,26 +9,32 @@ input {
     border-radius: 8px;
     border: none;
     background-color: #ffffff15;
-    color: #FFFFFF;
-    border: solid transparent;
-
+    color: #ffffff;
+    border: 1px solid transparent;
+    box-shadow: 6px 6px 18px 5px #00000085;
     &:hover,
     :focus {
         background-color: #cfdfb523;
-        border: solid #FFFFFF;
+        border: 1px solid #ffffff;
+    }
+    &:valid{
+        border: 1px solid #8AC9264D;
+    }
+    &:invalid{
+        border: 1px solid #FF595E4D;
     }
 }
 
 button {
-    background-color: #B4E364;
+    background-color: #b4e364;
     border: none;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 10px;
     border-radius: 8px;
-
+    box-shadow: 6px 6px 18px 5px #00000085;
     &:hover {
         background-color: #c1e287;
-        color: #FFFFFF;
+        color: #ffffff;
     }
 }
