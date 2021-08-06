@@ -1,18 +1,6 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/mevn.jpg" />
-    <HelloWorld msg="PWA Boilerplate Template" />
-  </div>
+  <section>
+    <router-link to="/connexion">Connexion</router-link><br>
+    <router-link to="/dashboard">Dashboard</router-link>
+  </section>
 </template>
-
-<script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
-export default {
-  name: "home",
-  components: {
-    HelloWorld
-  }
-};
-</script>
