@@ -1,7 +1,7 @@
 <template>
   <section class="bgNav">
     <article>
-      <div class="Logo">C+</div>
+      <div class="Logo" to="/">C+</div>
     </article>
     <nav class="navApp">
       <ul>
@@ -234,6 +234,8 @@ export default {
   font-size: 56px;
   font-weight: bold;
   color: #b4e364;
+  align-self: flex-end;
+  margin-top: 25%;
 }
 .bgNav {
   background-color: #1e1e1e;
@@ -244,6 +246,10 @@ export default {
   height: 100vh;
 }
 .StikDown {
+  align-self: flex-end;
+}
+.StikDown > ul{
+  margin-bottom: 0px;
 }
 ul {
   list-style-type: none;

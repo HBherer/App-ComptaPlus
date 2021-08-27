@@ -24,7 +24,7 @@
       </form>
       <p class="LogUn">
         Vous n'avez pas encore de compte?
-        <router-link to="subscribe">S'inscrire</router-link>
+        <router-link to="subscribe" class="aLinkSub">S'inscrire</router-link>
       </p>
     </article>
     <article class="SubContainerR">
