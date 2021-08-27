@@ -1,0 +1,58 @@
+// Page connexion
+@media screen and (max-width: 768px) {
+    .SubContainer {
+        width: 50%;
+        z-index: 1;
+    }
+    .LogUn {
+        margin-top: 28vh;
+        font-size: 14px;
+    }
+    .SubContainerR {
+        width: 50%;
+    }
+    .SizeImgLogPage {
+        width: 100%;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    .ParaInfo {
+        width: 100%;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    .p2 {
+        margin-top: -40px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .ContainerFlexLogPage {
+        display: block;
+    }
+    .SubContainer {
+        width: 100%;
+    }
+    .SubContainerR {
+        display: none;
+    }
+    .LogUn {
+        margin-top: 15vh;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 290px) {
+    .ContainerFlexLogPage {
+        display: block;
+    }
+    .SubContainer {
+        width: 100%;
+    }
+    .SubContainerR {
+        display: none;
+    }
+    .LogUn {
+        margin-top: 15vh;
+        font-size: 12px;
+    }
+}
